@@ -48,7 +48,7 @@
             "metadata": {
                 "description": "The kind of data connectors that can be deployed via ARM templates are the following: [\"AzureActivityLog\",\"SecurityInsightsSecurityEventCollectionConfiguration\",\"WindowsFirewall\",\"DnsAnalytics\"], Reference: https://docs.microsoft.com/azure/templates/microsoft.operationalinsights/2020-03-01-preview/workspaces/datasources#microsoftoperationalinsightsworkspacesdatasources-object"
             },
-            "defaultValue": [\"AzureActivityLog\",\"SecurityInsightsSecurityEventCollectionConfiguration\",\"WindowsFirewall\",\"DnsAnalytics\"]
+            "defaultValue": ["AzureActivityLog","SecurityInsightsSecurityEventCollectionConfiguration","WindowsFirewall","DnsAnalytics"]
         },
         "enableFusionAlert": {
             "type": "bool",
