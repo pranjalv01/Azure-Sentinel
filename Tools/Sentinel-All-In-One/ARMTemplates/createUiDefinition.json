@@ -83,7 +83,7 @@
                         "label": "Select data connectors to onboard",
                         "placeholder": "",
                         "multiselect": true,
-                        "defaultValue": "o365","AzureAdvancedThreatProtection","AzureActiveDirectory"
+                        "defaultValue": "o365,AzureAdvancedThreatProtection,AzureActiveDirectory",
                         "toolTip": "Select the data connectors that you would like to enable",
                         "constraints": {
                             "allowedValues": [
