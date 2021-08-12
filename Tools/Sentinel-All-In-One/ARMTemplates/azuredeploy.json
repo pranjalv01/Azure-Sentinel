@@ -36,16 +36,16 @@
         
         "outputs": {
             "workspaceName": "[basics('workspaceName')]",
-            "dailyQuota": 0,
-            "dataRetention": 90,
+            "dailyQuota": "0",
+            "dataRetention": "90",
             "enableDataConnectorsKind": "[Office365,AzureAdvancedThreatProtection,AzureActiveDirectory,MicrosoftDefenderAdvancedThreatProtection,AzureSecurityCenter,MicrosoftCloudAppSecurity,AzureActivity,SecurityEvents,WindowsFirewall,DNS,Syslog]",
             "securityCollectionTier": "Recommended",
-            "mcasDiscoveryLogs": true,
+            "mcasDiscoveryLogs":"true",
             "location": "[location()]",
-            "enableFusionAlert": true,
-            "enableMicrosoftAlerts": true,
-            "enableMLAlerts": true,
-            "enableScheduledAlerts": true
+            "enableFusionAlert": "true",
+            "enableMicrosoftAlerts": "true",
+            "enableMLAlerts": "true",
+            "enableScheduledAlerts": "true"
         }
     }
 }
