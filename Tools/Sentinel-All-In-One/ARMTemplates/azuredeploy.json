@@ -39,11 +39,11 @@
                 "defaultValue": "0",
                 "toolTip": "This limit doesn't apply to the following tables: SecurityAlert, SecurityBaseline, SecurityBaselineSummary, SecurityDetection, SecurityEvent, WindowsFirewall, MaliciousIPCommunication, LinuxAuditLog, SysmonEvent, ProtectionStatus, WindowsEvent",
                 "constraints": {
-                    "required": true,
+                    "required": false,
                     "regex": "^[0-9]{1,4}$",
                     "validationMessage": "Only numbers allowed, and the value must be 1-4 characters long."
                 },
-                "visible": true
+                "visible": false
             },
             {
                 "name": "dataRetention",
