@@ -32,20 +32,7 @@
                 "visible": true
             },
             
-            {
-                "name": "dataRetention",
-                "type": "Microsoft.Common.TextBox",
-                "label": "Number of days of retention",
-                "placeholder": "",
-                "defaultValue": "90",
-                "toolTip": "Only numbers allowed",
-                "constraints": {
-                    "required": true,
-                    "regex": "([3-8][0-9]|9[0-9]|[1-6][0-9]{2}|7[0-2][0-9]|730)",
-                    "validationMessage": "Retention must be between 30 and 730 days."
-                },
-                "visible": true
-            }
+            
         ],
         "steps": [
             {
@@ -119,9 +106,9 @@
                                     "value": "Syslog"
                                 }
                             ],
-                            "required": true
+                            "required": false
                         },
-                        "visible": true
+                        "visible": false
                     },
                     {
                         "name": "mcasDiscoveryLogs",
@@ -215,15 +202,15 @@
         "outputs": {
             "workspaceName": "[basics('workspaceName')]",
             "dailyQuota": 0,
-            "dataRetention": "[basics('dataRetention')]",
-            "enableDataConnectorsKind": "[steps('dataConnectors').enableDataConnectorsKind]",
-            "securityCollectionTier": "[steps('dataConnectors').securityCollectionTier]",
-            "mcasDiscoveryLogs": "[steps('dataConnectors').mcasDiscoveryLogs]",
+            "dataRetention": 90,
+            "enableDataConnectorsKind": "[Office365,AzureAdvancedThreatProtection,AzureActiveDirectory,MicrosoftDefenderAdvancedThreatProtection,AzureSecurityCenter,MicrosoftCloudAppSecurity,AzureActivity,SecurityEvents,WindowsFirewall,DNS,Syslog]",
+            "securityCollectionTier": "Recommended",
+            "mcasDiscoveryLogs": true,
             "location": "[location()]",
-            "enableFusionAlert": "[steps('analyticsRules').enableFusionAlert]",
-            "enableMicrosoftAlerts": "[steps('analyticsRules').enableMicrosoftAlerts]",
-            "enableMLAlerts": "[steps('analyticsRules').enableMLAlerts]",
-            "enableScheduledAlerts": "[steps('analyticsRules').enableScheduledAlerts]"
+            "enableFusionAlert": true,
+            "enableMicrosoftAlerts": true,
+            "enableMLAlerts": true,
+            "enableScheduledAlerts": true
         }
     }
 }
