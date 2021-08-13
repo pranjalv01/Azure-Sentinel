@@ -72,7 +72,6 @@
                         "name": "securityCollectionTier",
                         "defaultValue": "Recommended",
                         "label": "Security Events to stream into Sentinel ",
-                        "defaultValue": "Recommended",
                         "toolTip": ""                 
                     }
                 ]
@@ -114,16 +113,16 @@
         ],
         "outputs": {
             "workspaceName": "[basics('workspaceName')]",
-            "dailyQuota": "[basics('dailyQuota')]",
-            "dataRetention": "[basics('dataRetention')]",
-            "enableDataConnectorsKind": "[steps('dataConnectors').enableDataConnectorsKind]",
-            "securityCollectionTier": "[steps('dataConnectors').securityCollectionTier]",
-            "mcasDiscoveryLogs": "[steps('dataConnectors').mcasDiscoveryLogs]",
+            "dailyQuota": "[90]",
+            "dataRetention": "[30]",
+            "enableDataConnectorsKind": "[true]",
+            "securityCollectionTier": "[true]",
+            "mcasDiscoveryLogs": "[true]",
             "location": "[location()]",
-            "enableFusionAlert": "[steps('analyticsRules').enableFusionAlert]",
-            "enableMicrosoftAlerts": "[steps('analyticsRules').enableMicrosoftAlerts]",
-            "enableMLAlerts": "[steps('analyticsRules').enableMLAlerts]",
-            "enableScheduledAlerts": "[steps('analyticsRules').enableScheduledAlerts]"
+            "enableFusionAlert": "[true]",
+            "enableMicrosoftAlerts": "[true]",
+            "enableMLAlerts": "[true]",
+            "enableScheduledAlerts": "[true]"
         }
     }
 }
