@@ -90,14 +90,14 @@
                         "name": "enableMicrosoftAlerts",
                         "defaultValue": true,
                         "label": "Enable Microsoft alert rules for selected connectors?",
-                        "toolTip": "Select to enable Microsoft rules for the connectors you selected in the previous step.",
+                        "toolTip": "Select to enable Microsoft rules for the connectors you selected in the previous step."
                         
                       },
                     {
                         "name": "enableMLAlerts",
                         "defaultValue": true,
                         "label": "Enable ML Behavior Analytics alert rules?",
-                        "toolTip": "Select to enable ML Behavior Analytics rules for selected connectors (SecurityEvents and/or Syslog)",
+                        "toolTip": "Select to enable ML Behavior Analytics rules for selected connectors (SecurityEvents and/or Syslog)"
                         
                         
                     },
