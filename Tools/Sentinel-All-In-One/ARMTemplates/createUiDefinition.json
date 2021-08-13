@@ -118,7 +118,6 @@
             "enableDataConnectorsKind": "[true]",
             "securityCollectionTier": "[true]",
             "mcasDiscoveryLogs": "[true]",
-            "location": "[location()]",
             "enableFusionAlert": "[true]",
             "enableMicrosoftAlerts": "[true]",
             "enableMLAlerts": "[true]",
