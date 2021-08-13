@@ -113,15 +113,15 @@
         ],
         "outputs": {
             "workspaceName": "[basics('workspaceName')]",
-            "dailyQuota": "[90]",
-            "dataRetention": "[30]",
-            "enableDataConnectorsKind": "[true]",
-            "securityCollectionTier": "[true]",
-            "mcasDiscoveryLogs": "[true]",
-            "enableFusionAlert": "[true]",
-            "enableMicrosoftAlerts": "[true]",
-            "enableMLAlerts": "[true]",
-            "enableScheduledAlerts": "[true]"
+            "dailyQuota": "90",
+            "dataRetention": "30",
+            "enableDataConnectorsKind": "true",
+            "securityCollectionTier": "true",
+            "mcasDiscoveryLogs": "true",
+            "enableFusionAlert": "true",
+            "enableMicrosoftAlerts": "true",
+            "enableMLAlerts": "true",
+            "enableScheduledAlerts": "true"
         }
     }
 }
