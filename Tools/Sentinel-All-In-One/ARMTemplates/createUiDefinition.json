@@ -52,15 +52,7 @@
                 "label": "Data connectors",
                 "elements": [
                     {
-                        "name": "textBlock1",                        
-                        "visible": true,
-                        "options": {
-                            "text": "Please select which connectors you want to onboard into your Azure Sentinel environment",
-                            "link": {
-                                "label": "Learn more",
-                                "uri": "https://www.microsoft.com"
-                            }
-                        }
+                        "name": "textBlock1"               
                     },
                     {
                         "name": "enableDataConnectorsKind",
