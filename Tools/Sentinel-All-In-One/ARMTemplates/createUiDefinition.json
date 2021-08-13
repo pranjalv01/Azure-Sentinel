@@ -92,15 +92,14 @@
                         "label": "Enable Microsoft alert rules for selected connectors?",
                         "toolTip": "Select to enable Microsoft rules for the connectors you selected in the previous step.",
                         
-                        "visible": "[if(or(contains(steps('dataConnectors').enableDataConnectorsKind,'AzureAdvancedThreatProtection'),contains(steps('dataConnectors').enableDataConnectorsKind,'AzureActiveDirectoryIdentityProtection'),contains(steps('dataConnectors').enableDataConnectorsKind,'MicrosoftDefenderAdvancedThreatProtection'),contains(steps('dataConnectors').enableDataConnectorsKind,'AzureSecurityCenter'),contains(steps('dataConnectors').enableDataConnectorsKind,'MicrosoftCloudAppSecurity')), true, false)]"
-                    },
+                      },
                     {
                         "name": "enableMLAlerts",
                         "defaultValue": true,
                         "label": "Enable ML Behavior Analytics alert rules?",
                         "toolTip": "Select to enable ML Behavior Analytics rules for selected connectors (SecurityEvents and/or Syslog)",
                         
-                        "visible": "[if(or(contains(steps('dataConnectors').enableDataConnectorsKind,'Syslog'),contains(steps('dataConnectors').enableDataConnectorsKind,'SecurityEvents')), true, false)]"
+                        
                     },
                     {
                         "name": "enableScheduledAlerts",
