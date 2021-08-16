@@ -158,9 +158,11 @@
                         },
                         "visible": false
                     }
-                ]
-            },
-            "visible": false
+                ],
+                "visible": false
+            }
+            
+            
         ],
         "outputs": {
             "workspaceName": "[basics('workspaceName')]",
