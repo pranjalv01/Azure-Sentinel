@@ -132,7 +132,7 @@
                                     "value": "Syslog"
                                 }
                             ],
-                            "required": true
+                            "required": false
                         },
                         "visible": true
                     },
