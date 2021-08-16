@@ -228,7 +228,7 @@
         "visible": false,
         "outputs": {
             "workspaceName": "[basics('workspaceName')]",
-            "dailyQuota": "0",
+            "dailyQuota": ["0"],
             "dataRetention": "[basics('dataRetention')]",
             "enableDataConnectorsKind": "[steps('dataConnectors').enableDataConnectorsKind]",
             "securityCollectionTier": "[steps('dataConnectors').securityCollectionTier]",
