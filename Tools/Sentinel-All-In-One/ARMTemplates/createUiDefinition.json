@@ -225,6 +225,7 @@
                 ]
             }
         ],
+        "visible": false,
         "outputs": {
             "workspaceName": "[basics('workspaceName')]",
             "dailyQuota": "[basics('dailyQuota')]",
