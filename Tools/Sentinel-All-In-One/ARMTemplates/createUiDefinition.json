@@ -159,7 +159,8 @@
                         "visible": false
                     }
                 ]
-            }
+            },
+            "visible": true
         ],
         "outputs": {
             "workspaceName": "[basics('workspaceName')]",
