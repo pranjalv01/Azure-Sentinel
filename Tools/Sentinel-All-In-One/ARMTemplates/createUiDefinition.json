@@ -157,9 +157,10 @@
                             "validationMessage": "Enables Scheduled rules matching any of the selected connectors"
                         },
                         "visible": false
-                    }
-                ],
-                "visible": false
+                    },
+                    "visible": false
+                ]
+                
             }
             
             
