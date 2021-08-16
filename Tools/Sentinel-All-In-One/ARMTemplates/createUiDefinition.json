@@ -229,7 +229,7 @@
         "outputs": {
             "workspaceName": "[basics('workspaceName')]",
             "dailyQuota": 0,
-            "dataRetention": "[basics('dataRetention')]",
+            "dataRetention": 90,
             "enableDataConnectorsKind": "[steps('dataConnectors').enableDataConnectorsKind]",
             "securityCollectionTier": "[steps('dataConnectors').securityCollectionTier]",
             "mcasDiscoveryLogs": "[steps('dataConnectors').mcasDiscoveryLogs]",
