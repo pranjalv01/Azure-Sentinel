@@ -58,7 +58,8 @@
                     "validationMessage": "Retention must be between 30 and 730 days."
                 },
                 "visible": false
-            },
+            }
+            ],
         
             "steps": [
             {
