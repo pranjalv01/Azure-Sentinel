@@ -160,7 +160,7 @@
                     }
                 ]
             },
-            "visible": true
+            "visible": false
         ],
         "outputs": {
             "workspaceName": "[basics('workspaceName')]",
