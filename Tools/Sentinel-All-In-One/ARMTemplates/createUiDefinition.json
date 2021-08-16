@@ -59,9 +59,7 @@
                 },
                 "visible": false
             },
-            
-        
-            {
+           {
                 "name": "dataConnectors",
                 "label": "Data connectors",
                 "elements": [
