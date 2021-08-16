@@ -39,7 +39,7 @@
                 "defaultValue": "0",
                 "toolTip": "This limit doesn't apply to the following tables: SecurityAlert, SecurityBaseline, SecurityBaselineSummary, SecurityDetection, SecurityEvent, WindowsFirewall, MaliciousIPCommunication, LinuxAuditLog, SysmonEvent, ProtectionStatus, WindowsEvent",
                 "constraints": {
-                    "required": true,
+                    "required": false,
                     "regex": "^[0-9]{1,4}$",
                     "validationMessage": "Only numbers allowed, and the value must be 1-4 characters long."
                 },
@@ -53,7 +53,7 @@
                 "defaultValue": "90",
                 "toolTip": "Only numbers allowed",
                 "constraints": {
-                    "required": true,
+                    "required": false,
                     "regex": "([3-8][0-9]|9[0-9]|[1-6][0-9]{2}|7[0-2][0-9]|730)",
                     "validationMessage": "Retention must be between 30 and 730 days."
                 },
