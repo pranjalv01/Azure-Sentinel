@@ -59,7 +59,7 @@
                 },
                 "visible": false
             },
-           {
+         {
                 "name": "dataConnectors",
                 "label": "Data connectors",
                 "elements": [
@@ -237,4 +237,4 @@
             "enableScheduledAlerts": "[steps('analyticsRules').enableScheduledAlerts]"
         }
     }
-}
+}  
