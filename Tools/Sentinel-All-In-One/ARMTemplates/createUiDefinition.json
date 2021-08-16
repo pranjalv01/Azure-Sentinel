@@ -68,7 +68,7 @@
                     {
                         "name": "textBlock1",
                         "type": "Microsoft.Common.TextBlock",
-                        "visible": true,
+                        "visible": false,
                         "options": {
                             "text": "Please select which connectors you want to onboard into your Azure Sentinel environment",
                             "link": {
