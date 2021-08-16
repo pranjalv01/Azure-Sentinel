@@ -60,8 +60,7 @@
                 "visible": false
             }
             ],
-        
-            "steps": [
+        "steps": [
             {
                 "name": "dataConnectors",
                 "label": "Data connectors",
@@ -241,5 +240,3 @@
         }
     }
 }
-            
-        
