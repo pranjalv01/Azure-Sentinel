@@ -60,71 +60,7 @@
                 "visible": false
             },
         
-            {
-                "name": "dataConnectors",
-                "label": "Data connectors",
-                "elements": [
-                    {
-                        "name": "textBlock1",
-                        "type": "Microsoft.Common.TextBlock",
-                        "visible": false,
-                        "options": {
-                            "text": "Please select which connectors you want to onboard into your Azure Sentinel environment",
-                            "link": {
-                                "label": "Learn more",
-                                "uri": "https://www.microsoft.com"
-                            }
-                        }
-                    },
-                    {
-                        "name": "enableDataConnectorsKind",
-                        "type": "Microsoft.Common.DropDown",
-                        "label": "Select data connectors to onboard",
-                        "placeholder": "",
-                        "multiselect": true,
-                        "defaultValue": "o365",
-                        "toolTip": "Select the data connectors that you would like to enable",
-                       
-                        "visible": false
-                    },
-                    {
-                        "name": "mcasDiscoveryLogs",
-                        "type": "Microsoft.Common.CheckBox",
-                        "label": "Enable MCAS Discovery Logs?",
-                        "toolTip": "Select to bring MCAS discovery logs into Sentinel. These logs are billed.",
-                        "constraints": {
-                            "required": false,
-                            "validationMessage": "Please select"
-                        },
-                        "visible": "[if(contains(steps('dataConnectors').enableDataConnectorsKind,'MicrosoftCloudAppSecurity'), true, false)]"
-                    },
-                    {
-                        "name": "securityCollectionTier",
-                        "type": "Microsoft.Common.OptionsGroup",
-                        "label": "Security Events to stream into Sentinel ",
-                        "defaultValue": "Recommended",
-                        "toolTip": "",
-                        "constraints": {
-                            "allowedValues": [
-                                {
-                                    "label": "All",
-                                    "value": "All"
-                                },
-                                {
-                                    "label": "Common",
-                                    "value": "Recommended"
-                                },
-                                {
-                                    "label": "Minimal",
-                                    "value": "Minimal"
-                                }
-                            ],
-                            "required": true
-                        },
-                        "visible": "[if(contains(steps('dataConnectors').enableDataConnectorsKind,'SecurityEvents'), true, false)]"
-                    }
-                ]
-            },
+            
             {
                 "name": "analyticsRules",
                 "label": "Analytics Rules",
