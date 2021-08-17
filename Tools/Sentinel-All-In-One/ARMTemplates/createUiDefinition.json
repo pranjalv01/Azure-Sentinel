@@ -16,7 +16,7 @@
                 }
             }
         },
-        "basics": [
+        
             {
                 "name": "workspaceName",
                 "type": "Microsoft.Common.TextBox",
@@ -223,8 +223,8 @@
                         "visible": false
                     }
                 ]
-            }
-        ],
+            },
+       
         
         "outputs": {
             "workspaceName": "[basics('workspaceName')]",
