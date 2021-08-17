@@ -231,7 +231,7 @@
             "dailyQuota": 0,
             "dataRetention": 90,
             "enableDataConnectorsKind": "[Office365]",
-            "securityCollectionTier": "[Office365]",
+            "securityCollectionTier": "[All]",
             "mcasDiscoveryLogs": true,
             "location": "[location()]",
             "enableFusionAlert": true,
