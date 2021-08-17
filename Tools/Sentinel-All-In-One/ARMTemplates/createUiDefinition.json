@@ -58,16 +58,16 @@
                     "validationMessage": "Retention must be between 30 and 730 days."
                 },
                 "visible": false
-            }
-        ],
-        "steps": [
+            },
+        
+        
             {
                 "name": "dataConnectors",
-                
+                "label": "Data connectors",
                 "elements": [
                     {
                         "name": "textBlock1",
-                       
+                        "type": "Microsoft.Common.TextBlock",
                         "visible": false,
                         "options": {
                             "text": "Please select which connectors you want to onboard into your Azure Sentinel environment",
@@ -79,7 +79,8 @@
                     },
                     {
                         "name": "enableDataConnectorsKind",
-                        
+                        "type": "Microsoft.Common.DropDown",
+                        "label": "Select data connectors to onboard",
                         "placeholder": "",
                         "multiselect": true,
                         "defaultValue": "o365",
@@ -137,7 +138,8 @@
                     },
                     {
                         "name": "mcasDiscoveryLogs",
-                        
+                        "type": "Microsoft.Common.CheckBox",
+                        "label": "Enable MCAS Discovery Logs?",
                         "toolTip": "Select to bring MCAS discovery logs into Sentinel. These logs are billed.",
                         "constraints": {
                             "required": false,
@@ -147,7 +149,8 @@
                     },
                     {
                         "name": "securityCollectionTier",
-                       
+                        "type": "Microsoft.Common.OptionsGroup",
+                        "label": "Security Events to stream into Sentinel ",
                         "defaultValue": "Recommended",
                         "toolTip": "",
                         "constraints": {
@@ -173,11 +176,12 @@
             },
             {
                 "name": "analyticsRules",
-                
+                "label": "Analytics Rules",
                 "elements": [
                     {
                         "name": "enableFusionAlert",
-                        
+                        "type": "Microsoft.Common.CheckBox",
+                        "label": "Enable Fusion alert rule?",
                         "toolTip": "Select to enable Fusion analyttic rule. Details here: https://docs.microsoft.com/azure/sentinel/fusion",
                         "constraints": {
                             "required": false,
@@ -187,7 +191,8 @@
                     },
                     {
                         "name": "enableMicrosoftAlerts",
-                        
+                        "type": "Microsoft.Common.CheckBox",
+                        "label": "Enable Microsoft alert rules for selected connectors?",
                         "toolTip": "Select to enable Microsoft rules for the connectors you selected in the previous step.",
                         "constraints": {
                             "required": false,
@@ -197,7 +202,8 @@
                     },
                     {
                         "name": "enableMLAlerts",
-                        
+                        "type": "Microsoft.Common.CheckBox",
+                        "label": "Enable ML Behavior Analytics alert rules?",
                         "toolTip": "Select to enable ML Behavior Analytics rules for selected connectors (SecurityEvents and/or Syslog)",
                         "constraints": {
                             "required": false,
@@ -207,7 +213,8 @@
                     },
                     {
                         "name": "enableScheduledAlerts",
-                        
+                        "type": "Microsoft.Common.CheckBox",
+                        "label": "Enable Scheduled alert rules for selected connectors?",
                         "toolTip": "Select to enable scheduled analytics rules for selected connectors",
                         "constraints": {
                             "required": false,
@@ -218,7 +225,7 @@
                 ]
             }
         ],
-       
+        
         "outputs": {
             "workspaceName": "[basics('workspaceName')]",
             "dailyQuota": 0,
