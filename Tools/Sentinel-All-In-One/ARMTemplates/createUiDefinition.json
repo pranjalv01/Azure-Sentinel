@@ -16,7 +16,7 @@
                 }
             }
         },
-        
+        "basics": [
             {
                 "name": "workspaceName",
                 "type": "Microsoft.Common.TextBox",
@@ -58,9 +58,9 @@
                     "validationMessage": "Retention must be between 30 and 730 days."
                 },
                 "visible": false
-            },
-        
-        
+            }
+        ],
+        "steps": [
             {
                 "name": "dataConnectors",
                 "label": "Data connectors",
@@ -223,9 +223,8 @@
                         "visible": false
                     }
                 ]
-            },
-       
-        
+            }
+        ],
         "outputs": {
             "workspaceName": "[basics('workspaceName')]",
             "dailyQuota": 0,
