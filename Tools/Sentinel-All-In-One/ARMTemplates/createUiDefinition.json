@@ -63,7 +63,6 @@
         "steps": [
             {
                 "name": "dataConnectors",
-                "label": "Data connectors",
                 "elements": [
                     {
                         "name": "textBlock1",
@@ -176,7 +175,6 @@
             },
             {
                 "name": "analyticsRules",
-                "label": "Analytics Rules",
                 "elements": [
                     {
                         "name": "enableFusionAlert",
