@@ -59,7 +59,8 @@
                 },
                 "visible": false
             }
-       
+        ],
+        "steps": [
             {
                 "name": "dataConnectors",
                 "label": "Data connectors",
