@@ -6,7 +6,7 @@
         "config": {
             "isWizard": false,
             "basics": {
-                "description": "**Azure Sentinel All-In-One** deployment, see more information about this project [here](https://github.com/Azure/Azure-Sentinel/Tools/Sentinel-All-In-One/).",
+                "description": "Azure Sentinel as Code",
                 "location": {
                     "label": "Location",
                     "toolTip": "Location for all resources",
@@ -63,7 +63,7 @@
         "steps": [
             {
                 "name": "dataConnectors",
-                "label": "Data connectors",
+                
                 "elements": [
                     {
                         "name": "textBlock1",
