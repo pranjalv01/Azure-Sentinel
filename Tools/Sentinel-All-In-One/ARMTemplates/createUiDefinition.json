@@ -223,7 +223,7 @@
                 ]
             }
         ],
-        "visible": false,
+        
         "outputs": {
             "workspaceName": "[basics('workspaceName')]",
             "dailyQuota": 0,
@@ -238,3 +238,5 @@
             "enableScheduledAlerts": true
         }
     }
+}
+
