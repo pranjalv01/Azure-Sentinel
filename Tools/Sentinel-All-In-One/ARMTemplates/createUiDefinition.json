@@ -58,10 +58,11 @@
                     "validationMessage": "Retention must be between 30 and 730 days."
                 },
                 "visible": false
-            },
+            }
+        ],
+        "steps": [
             {
                 "name": "dataConnectors",
-                "label": "Data connectors",
                 "elements": [
                     {
                         "name": "textBlock1",
@@ -174,7 +175,6 @@
             },
             {
                 "name": "analyticsRules",
-                "label": "Analytics Rules",
                 "elements": [
                     {
                         "name": "enableFusionAlert",
@@ -223,7 +223,6 @@
                 ]
             }
         ],
-        
         "outputs": {
             "workspaceName": "[basics('workspaceName')]",
             "dailyQuota": 0,
