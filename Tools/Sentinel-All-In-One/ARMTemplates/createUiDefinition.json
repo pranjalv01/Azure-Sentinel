@@ -6,7 +6,7 @@
         "config": {
             "isWizard": false,
             "basics": {
-                "description": "Azure Sentinel As Code",
+                "description": "Azure Sentinel As Code 07",
                 "location": {
                     "label": "Location",
                     "toolTip": "Location for all resources",
@@ -144,7 +144,7 @@
                             "required": false,
                             "validationMessage": "Please select"
                         },
-                        "visible": "false"
+                        "visible": false
                     },
                     {
                         "name": "securityCollectionTier",
@@ -227,7 +227,7 @@
             "workspaceName": "[basics('workspaceName')]",
             "dailyQuota": 0,
             "dataRetention": 90,
-            "enableDataConnectorsKind": ["Office365","WindowsFirewall","AzureAdvancedThreatProtection","AzureActiveDirectory","MicrosoftDefenderAdvancedThreatProtection","AzureSecurityCenter"],
+            "enableDataConnectorsKind": ["Office365","WindowsFirewall","AzureAdvancedThreatProtection","AzureActiveDirectory","MicrosoftDefenderAdvancedThreatProtection"],
             "securityCollectionTier": "Recommended",
             "mcasDiscoveryLogs": true,
             "location": "[location()]",
