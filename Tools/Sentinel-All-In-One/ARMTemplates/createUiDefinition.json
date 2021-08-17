@@ -144,7 +144,7 @@
                             "required": false,
                             "validationMessage": "Please select"
                         },
-                        "visible": "[if(contains(steps('dataConnectors').enableDataConnectorsKind,'MicrosoftCloudAppSecurity'), true, false)]"
+                        "visible": "false"
                     },
                     {
                         "name": "securityCollectionTier",
@@ -169,7 +169,7 @@
                             ],
                             "required": false
                         },
-                        "visible": "[if(contains(steps('dataConnectors').enableDataConnectorsKind,'SecurityEvents'), true, false)]"
+                        "visible": "false"
                     }
                 ]
             },
