@@ -144,7 +144,7 @@
                             "required": false,
                             "validationMessage": "Please select"
                         },
-                        "visible": false
+                        "visible": "[if(contains(steps('dataConnectors').enableDataConnectorsKind,'MicrosoftCloudAppSecurity'), true, false)]"
                     },
                     {
                         "name": "securityCollectionTier",
@@ -169,7 +169,7 @@
                             ],
                             "required": false
                         },
-                        "visible": false
+                        "visible": "[if(contains(steps('dataConnectors').enableDataConnectorsKind,'SecurityEvents'), true, false)]"
                     }
                 ]
             },
@@ -227,7 +227,7 @@
             "workspaceName": "[basics('workspaceName')]",
             "dailyQuota": 0,
             "dataRetention": 90,
-            "enableDataConnectorsKind": ["Office365","AzureSecurityCenter","WindowsFirewall","AzureAdvancedThreatProtection","MicrosoftDefenderAdvancedThreatProtection","MicrosoftCloudAppSecurity","AzureActivity","SecurityEvents","DNS","Syslog"],
+            "enableDataConnectorsKind": ["Office365","WindowsFirewall","AzureAdvancedThreatProtection","MicrosoftDefenderAdvancedThreatProtection","MicrosoftCloudAppSecurity","SecurityEvents","DNS"],
             "securityCollectionTier": "Recommended",
             "mcasDiscoveryLogs": true,
             "location": "[location()]",
