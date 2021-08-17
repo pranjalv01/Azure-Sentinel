@@ -230,7 +230,7 @@
             "workspaceName": "[basics('workspaceName')]",
             "dailyQuota": 0,
             "dataRetention": 90,
-            "enableDataConnectorsKind": "[Office365,AzureSecurityCenter,WindowsFirewall]",
+            "enableDataConnectorsKind": "['Office365','AzureSecurityCenter','WindowsFirewall']",
             "securityCollectionTier": "Recommended",
             "mcasDiscoveryLogs": true,
             "location": "[location()]",
