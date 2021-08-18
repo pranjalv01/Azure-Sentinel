@@ -13,7 +13,8 @@
             "defaultValue": "[subscription().subscriptionId]",
             "metadata": {
                 "description": "Subscription ID to monitor"
-            }
+            },
+            "visible": false
         },
          "location": {
             "type": "string",
