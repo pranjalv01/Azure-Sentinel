@@ -7,7 +7,8 @@
         },
         "workspaceLocation": {
             "type": "string"
-        }
+        },
+        "visible": false
     },
     "resources": [
         {
@@ -20,8 +21,8 @@
                 "sku": {
                     "name": "pergb2018"
                 }
-            },
-            "visible": false
+            }
+            
         },
         
         {
