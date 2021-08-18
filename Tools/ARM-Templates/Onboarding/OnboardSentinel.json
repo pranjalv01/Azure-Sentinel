@@ -5,15 +5,13 @@
         "workspaceName": {
             "type": "string"
         },
-        "workspaceLocation": {
-            "type": "string"
-        }
+        
     },
     "resources": [
         {
             "apiVersion": "2017-03-15-preview",
             "name": "[parameters('workspaceName')]",
-            "location": "[parameters('workspaceLocation')]",
+
             "tags": {},
             "type": "Microsoft.OperationalInsights/workspaces",
             "properties": {
