@@ -5,13 +5,15 @@
         "workspaceName": {
             "type": "string"
         },
-        
+        "workspaceLocation": {
+            "type": "string"
+        }
     },
     "resources": [
         {
             "apiVersion": "2017-03-15-preview",
             "name": "[parameters('workspaceName')]",
-
+            "location": "[parameters('workspaceLocation')]",
             "tags": {},
             "type": "Microsoft.OperationalInsights/workspaces",
             "properties": {
@@ -20,6 +22,7 @@
                 }
             }
         },
+        "visible": false
         {
             "name": "[concat(parameters('workspaceName'),'/Microsoft.SecurityInsights/default')]",
             "type": "Microsoft.OperationalInsights/workspaces/providers/onboardingStates",
