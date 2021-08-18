@@ -4,27 +4,21 @@
     "parameters": {
         "workspaceName": {
             "type": "string"
-        },
-        "workspaceLocation": {
-            "type": "string"
-        },
-        "visible": false
+        }
     },
     "resources": [
         {
             "apiVersion": "2017-03-15-preview",
             "name": "[parameters('workspaceName')]",
-            "location": "[parameters('workspaceLocation')]",
+            "location": "East US",
             "tags": {},
             "type": "Microsoft.OperationalInsights/workspaces",
             "properties": {
                 "sku": {
                     "name": "pergb2018"
                 }
-            }
-            
+            }    
         },
-        
         {
             "name": "[concat(parameters('workspaceName'),'/Microsoft.SecurityInsights/default')]",
             "type": "Microsoft.OperationalInsights/workspaces/providers/onboardingStates",
