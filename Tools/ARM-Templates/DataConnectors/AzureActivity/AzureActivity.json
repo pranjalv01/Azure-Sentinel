@@ -13,15 +13,15 @@
             "defaultValue": "[subscription().subscriptionId]",
             "metadata": {
                 "description": "Subscription ID to monitor"
-            }            
+            }
         },
          "location": {
             "type": "string",
-            "defaultValue": "East US",
+            "defaultValue": "[resourceGroup().location]",
             "metadata": {
                 "description": "Location for all resources."
             }
-        }        
+        }
     },
     "functions": [],
     "variables": {},
