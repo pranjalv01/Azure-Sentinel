@@ -20,9 +20,10 @@
                 "sku": {
                     "name": "pergb2018"
                 }
-            }
+            },
+            "visible": false
         },
-        "visible": false
+        
         {
             "name": "[concat(parameters('workspaceName'),'/Microsoft.SecurityInsights/default')]",
             "type": "Microsoft.OperationalInsights/workspaces/providers/onboardingStates",
