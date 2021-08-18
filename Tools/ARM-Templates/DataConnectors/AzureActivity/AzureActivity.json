@@ -15,7 +15,7 @@
                 "description": "Subscription ID to monitor"
             }            
         },
-        "visible": false
+        "visible": false,
          "location": {
             "type": "string",
             "defaultValue": "[resourceGroup().location]",
