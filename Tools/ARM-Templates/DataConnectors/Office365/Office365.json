@@ -16,6 +16,7 @@
                 "disabled"
             ],
             "hidden": true,
+            "effect": "HIDE",
             "metadata": {
                 "description": "Exchange state (enabled or disabled). Free data source."
             }
