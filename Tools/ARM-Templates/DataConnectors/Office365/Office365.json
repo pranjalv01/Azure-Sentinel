@@ -5,9 +5,9 @@
         "workspaceName": {
             "type": "string",
             "metadata": {
-                "description": "Workspace name for Log Analytics where Sentinel is setup 07"
+                "description": "Workspace name for Log Analytics where Sentinel is setup 08"
             }
-        }
+        },
         "connectorId": {
             "type": "string",
             "defaultValue": "[newGuid()]",
