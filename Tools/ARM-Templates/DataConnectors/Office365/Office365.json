@@ -5,24 +5,11 @@
         "workspaceName": {
             "type": "string",
             "metadata": {
-                "description": "Workspace name for Log Analytics where Sentinel is setup 06"
-            }
-        },
-        
-        "location": {
-            "type": "string",
-            "defaultValue": "[resourceGroup().location]",
-            "metadata": {
-                "description": "Location for all resources."
-            }
-        },
-        "connectorId": {
-            "type": "string",
-            "defaultValue": "[newGuid()]",
-            "metadata": {
-                "description": "GUID for the new alert rule. A new GUID will be created by default with the newGuid() function."
+                "description": "Workspace name for Log Analytics where Sentinel is setup 07"
             }
         }
+        
+        
     },
     "resources": [
         {
