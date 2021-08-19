@@ -14,7 +14,7 @@
             "defaultValue": "<Enter Log Analytics Workspace name>",
             "type": "string",
             "metadata": {
-                "description": "Workspace name for Log Analytics where Sentinel is setup 011"
+                "description": "Workspace name for Log Analytics where Sentinel is setup 021"
             }
         },
         
@@ -27,7 +27,9 @@
         }
     },
     "functions": [],
-    "variables": {},
+    "variables": {
+     "alertRuleTemplateName": "f71aba3d-28fb-450b-b192-4e76a83015c8",
+    },
     "resources": [
         {
             "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules",
@@ -43,7 +45,7 @@
         }
     ],
     "outputs": {
-        "alertRuleTemplateName": "f71aba3d-28fb-450b-b192-4e76a83015c8",
+       
         "ruleId": {
             "type": "string",
             "value": "[parameters('ruleId')]"
