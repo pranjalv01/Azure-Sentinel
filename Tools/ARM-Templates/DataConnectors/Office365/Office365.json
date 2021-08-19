@@ -12,7 +12,7 @@
             "type": "string",
              "widget": {
                  "formlyConfig": {
-                  "hideExpression": "true"
+                  "hideExpression": true
                                }
                         },
             "defaultValue": "enabled",
