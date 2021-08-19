@@ -5,12 +5,12 @@
         "workspaceName": {
             "type": "string",
             "metadata": {
-                "description": "Workspace name for Log Analytics where Sentinel is setup 03"
+                "description": "Workspace name for Log Analytics where Sentinel is setup 04"
             }
         },
         "exchangeState": {
             "type": "string",
-             "hidden": true,
+            "options": {"hidden": true},
             "defaultValue": "enabled",
             "allowedValues": [
                 "enabled",
