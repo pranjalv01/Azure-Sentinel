@@ -5,16 +5,7 @@
         "workspaceName": {
             "type": "string",
             "metadata": {
-                "description": "Workspace name for Log Analytics where Sentinel is setup 13"
-            }
-        }   
-       },
-    "variables": {
-            "location": {
-            "type": "string",
-            "defaultValue": "[resourceGroup().location]",
-            "metadata": {
-                "description": "Location for all resources."
+                "description": "Workspace name for Log Analytics where Sentinel is setup 14"
             }
         },
         "connectorId": {
@@ -24,6 +15,15 @@
                 "description": "GUID for the new alert rule. A new GUID will be created by default with the newGuid() function."
             }
         }
+       },
+    "variables": {
+            "location": {
+            "type": "string",
+            "defaultValue": "[resourceGroup().location]",
+            "metadata": {
+                "description": "Location for all resources."
+            }
+        }        
     },
         
     "resources": [
@@ -31,7 +31,7 @@
             "type": "Microsoft.OperationalInsights/workspaces/providers/dataConnectors",
             "apiVersion": "2020-01-01",
             "location": "[outputs('location')]",
-            "name": "[concat(parameters('workspaceName'),'/Microsoft.SecurityInsights/',variables('connectorId'))]",
+            "name": "[concat(parameters('workspaceName'),'/Microsoft.SecurityInsights/',parameters('connectorId'))]",
             "kind": "Office365",
             "properties": {
                 "tenantId": "[subscription().tenantId]",
@@ -52,7 +52,7 @@
     "outputs": {
         "connectorId": {
             "type": "string",
-            "value": "[variables('connectorId')]"
+            "value": "[parameters('connectorId')]"
         }
     }
 }
