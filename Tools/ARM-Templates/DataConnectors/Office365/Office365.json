@@ -5,43 +5,10 @@
         "workspaceName": {
             "type": "string",
             "metadata": {
-                "description": "Workspace name for Log Analytics where Sentinel is setup 04"
+                "description": "Workspace name for Log Analytics where Sentinel is setup 06"
             }
         },
-        "exchangeState": {
-            "type": "string",
-            "options": {"hidden": true},
-            "defaultValue": "enabled",
-            "allowedValues": [
-                "enabled",
-                "disabled"
-            ],           
-            "metadata": {
-                "description": "Exchange state (enabled or disabled). Free data source."
-            }
-        },
-        "sharePointState": {
-            "type": "string",
-            "defaultValue": "enabled",
-            "allowedValues": [
-                "enabled",
-                "disabled"
-            ],
-            "metadata": {
-                "description": "SharePoint state (enabled or disabled). Free data source."
-            }
-        },
-        "teamsState": {
-            "type": "string",
-            "defaultValue": "enabled",
-            "allowedValues": [
-                "enabled",
-                "disabled"
-            ],
-            "metadata": {
-                "description": "Teams state (enabled or disabled). Free data source."
-            }
-        },
+        
         "location": {
             "type": "string",
             "defaultValue": "[resourceGroup().location]",
