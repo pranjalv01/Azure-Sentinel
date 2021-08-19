@@ -7,7 +7,7 @@
             "defaultValue": "<Enter Log Analytics Workspace name>",
             "type": "string",
             "metadata": {
-                "description": "Workspace name for Log Analytics where Sentinel is setup 02"
+                "description": "Workspace name for Log Analytics where Sentinel is setup 03"
             }
         },
         "ruleId": {
@@ -61,6 +61,8 @@
         "ruleId": {
             "type": "string",
             "value": "[parameters('ruleId')]"
-        }
+        },
+         "location": "[resourceGroup().location]",
+          "ruleId": "[newGuid()]"
     }
 }
