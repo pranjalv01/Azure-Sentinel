@@ -14,10 +14,16 @@
             "defaultValue": "<Enter Log Analytics Workspace name>",
             "type": "string",
             "metadata": {
-                "description": "Workspace name for Log Analytics where Sentinel is setup 021"
+                "description": "Workspace name for Log Analytics where Sentinel is setup"
             }
         },
-        
+        "alertRuleTemplateName": {
+            "type": "string",
+            "defaultValue": "f71aba3d-28fb-450b-b192-4e76a83015c8",
+            "metadata": {
+                "description": "Id of the fusion rule template"
+            }
+        },
         "ruleId": {
             "type": "string",
             "defaultValue": "[newGuid()]",
@@ -27,9 +33,7 @@
         }
     },
     "functions": [],
-    "variables": {
-     "alertRuleTemplateName": "f71aba3d-28fb-450b-b192-4e76a83015c8",
-    },
+    "variables": {},
     "resources": [
         {
             "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules",
@@ -45,7 +49,6 @@
         }
     ],
     "outputs": {
-       
         "ruleId": {
             "type": "string",
             "value": "[parameters('ruleId')]"
