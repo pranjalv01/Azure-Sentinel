@@ -75,7 +75,8 @@
                     "teams": {
                         "state": "[parameters('teamsState')]"
                     }
-                }
+                },
+                "visible": false
             }
         }
     ],
