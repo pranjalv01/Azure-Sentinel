@@ -2,7 +2,20 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "location": {
+        
+        "workspaceName": {
+            "defaultValue": "<Enter Log Analytics Workspace name>",
+            "type": "string",
+            "metadata": {
+                "description": "Workspace name for Log Analytics where Sentinel is setup 01"
+            }
+        }
+        
+        },
+        
+    "functions": [],
+    "variables": {
+    "location": {
             "type": "string",
             "visible": false,
             "minLength": 1,
@@ -11,22 +24,15 @@
                 "description": "Resource group to deploy solution resources"
             }
         },
-        "workspaceName": {
-            "defaultValue": "<Enter Log Analytics Workspace name>",
-            "type": "string",
-            "metadata": {
-                "description": "Workspace name for Log Analytics where Sentinel is setup"
-            }
-        },
         "alertRuleTemplateName": {
             "type": "string",
             "visible": false,
             "defaultValue": "fa118b98-de46-4e94-87f9-8e6d5060b60b",
             "metadata": {
                 "description": "Id of the fusion rule template"
-            }
+    }
         },
-        "ruleId": {
+            "ruleId": {
             "type": "string",
             "visible": false,
             "defaultValue": "[newGuid()]",
@@ -35,8 +41,7 @@
             }
         }
     },
-    "functions": [],
-    "variables": {},
+            
     "resources": [
         {
             "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules",
