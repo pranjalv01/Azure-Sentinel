@@ -4,6 +4,7 @@
     "parameters": {
         "location": {
             "type": "string",
+            "visible": false,
             "minLength": 1,
             "defaultValue": "[resourceGroup().location]",
             "metadata": {
@@ -19,6 +20,7 @@
         },
         "alertRuleTemplateName": {
             "type": "string",
+            "visible": false,
             "defaultValue": "fa118b98-de46-4e94-87f9-8e6d5060b60b",
             "metadata": {
                 "description": "Id of the fusion rule template"
@@ -26,6 +28,7 @@
         },
         "ruleId": {
             "type": "string",
+            "visible": false,
             "defaultValue": "[newGuid()]",
             "metadata": {
                 "description": "The unique guid for this scheduled alert rule"
