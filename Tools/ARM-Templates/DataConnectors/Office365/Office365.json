@@ -10,6 +10,11 @@
         },
         "exchangeState": {
             "type": "string",
+             "widget": {
+                 "formlyConfig": {
+                  "hideExpression": "true"
+                               }
+                        },
             "defaultValue": "enabled",
             "allowedValues": [
                 "enabled",
