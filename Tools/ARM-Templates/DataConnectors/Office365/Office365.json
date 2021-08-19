@@ -13,8 +13,8 @@
         {
             "type": "Microsoft.OperationalInsights/workspaces/providers/dataConnectors",
             "apiVersion": "2020-01-01",
-            "location": "[parameters('location')]",
-            "name": "[concat(parameters('workspaceName'),'/Microsoft.SecurityInsights/',parameters('connectorId'))]",
+            "location": "[outputs('location')]",
+            "name": "[concat(parameters('workspaceName'),'/Microsoft.SecurityInsights/',outputs('connectorId'))]",
             "kind": "Office365",
             "properties": {
                 "tenantId": "[subscription().tenantId]",
