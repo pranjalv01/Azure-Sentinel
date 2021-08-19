@@ -8,7 +8,13 @@
                 "description": "Workspace name for Log Analytics where Sentinel is setup 07"
             }
         }
-        
+        "connectorId": {
+            "type": "string",
+            "defaultValue": "[newGuid()]",
+            "metadata": {
+                "description": "GUID for the new alert rule. A new GUID will be created by default with the newGuid() function."
+            }
+        }
         
     },
     "resources": [
