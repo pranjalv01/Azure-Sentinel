@@ -56,8 +56,7 @@
             "metadata": {
                 "description": "GUID for the new alert rule. A new GUID will be created by default with the newGuid() function."
             }
-        },
-        "visible": false
+        }
     },
     "resources": [
         {
